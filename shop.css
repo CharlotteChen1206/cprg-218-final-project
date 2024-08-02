@@ -9,10 +9,6 @@ body {
     color: #333;
 }
 
-header {
-    background-color: #FFF1E7;
-    padding: 10px;
-}
 
 /* New Collection */
 .new-collection {
@@ -48,6 +44,46 @@ header {
 
 .gallery-item img:hover {
     transform: scale(1.05);
+}
+
+/* Add this to shop.css */
+.filter-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filter-container label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.filter-container select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination span {
+    font-weight: bold;
 }
 
 /* Media Queries */
@@ -90,10 +126,6 @@ header {
         margin-top: 20px;
     }
 
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 @media (min-width: 600px) {
@@ -105,8 +137,4 @@ header {
         grid-template-columns: 1fr 1fr;
     }
 
-    .footer-content {
-        flex-direction: row;
-        justify-content: space-between;
-    }
 }

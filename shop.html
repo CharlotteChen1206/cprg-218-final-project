@@ -6,37 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bella Cosmetics</title>
     <link rel="stylesheet" href="shop.css">
+    <script src="index.js" defer></script>
 </head>
 
-<section class="new-collection" id="shop">
-    <h2>New Collection</h2>
-    <p>Explore our curated selection of beauty essentials and indulgent wellness products <br> designed to elevate
-        your
-        daily self-care rituals.</p>
-    <div class="gallery">
-        <div class="gallery-item">
-            <img src="https://images.pexels.com/photos/8981524/pexels-photo-8981524.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Product 1">
-            <p>Radiant Glow Foundation</p>
-            <p>C$25.00</p>
+<body>
+
+    <section class="new-collection" id="shop">
+        <h2>New Collection</h2>
+        <p>Explore our curated selection of beauty essentials and indulgent wellness products <br> designed to elevate
+            your daily self-care rituals.</p>
+        <div class="filter-container">
+            <label for="category-filter">Filter by Category:</label>
+            <select id="category-filter">
+                <option value="lipstick">Lipstick</option>
+                <option value="eyeliner">Eyeliner</option>
+                <option value="foundation">Foundation</option>
+                <option value="blush">Blush</option>
+                <option value="bronzer">Bronzer</option>
+                <option value="mascara">Mascara</option>
+                <option value="eyeshadow">Eyeshadow</option>
+                <option value="lip_liner">Lip Liner</option>
+                <option value="eyebrow">Eyebrow</option>
+                <option value="nail_polish">Nail Polish</option>
+            </select>
         </div>
-        <div class="gallery-item">
-            <img src="https://images.pexels.com/photos/3060257/pexels-photo-3060257.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Product 2">
-            <p>Velvet Matte Lipstick</p>
-            <p>C$22.00</p>
+
+        <div class="gallery" id="product-gallery">
         </div>
-        <div class="gallery-item">
-            <img src="https://images.pexels.com/photos/2639947/pexels-photo-2639947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Product 3">
-            <p>Cheeky Blush Palette</p>
-            <p>C$18.00</p>
-        </div>
-        <div class="gallery-item">
-            <img src="https://images.pexels.com/photos/2517447/pexels-photo-2517447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Product 4">
-            <p>Precision Liquid Eyeliner</p>
-            <p>C$15.00</p>
-        </div>
-    </div>
-</section>
+    </section>
+
+</body>
+
+</html>
