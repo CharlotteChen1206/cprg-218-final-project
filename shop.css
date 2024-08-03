@@ -9,7 +9,6 @@ body {
     color: #333;
 }
 
-
 /* New Collection */
 .new-collection {
     padding: 50px 20px;
@@ -46,7 +45,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Add this to shop.css */
 .filter-container {
     margin-bottom: 20px;
     text-align: center;
