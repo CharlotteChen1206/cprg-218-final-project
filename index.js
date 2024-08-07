@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const gallery = document.getElementById('product-gallery');
     const categoryFilter = document.getElementById('category-filter');
-    const placeholderImage = 'https://via.placeholder.com/150'; 
 
     categoryFilter.addEventListener('change', () => {
         const selectedCategory = categoryFilter.value;
@@ -12,9 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchProducts(categoryFilter.value);
 
     function fetchProducts(category) {
-        const apiUrl = `https://makeup-api.herokuapp.com/api/v1/products.json?product_type=${category}`;
-
-        fetch(apiUrl)
+        fetch(`https://makeup-api.herokuapp.com/api/v1/products.json?product_type=${category}`)
             .then(response => response.json())
             .then(products => {
                 const limitedProducts = products.slice(0, 20);
@@ -25,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function displayProducts(products) {
         gallery.innerHTML = '';
+
         products.forEach(product => {
             const productItem = document.createElement('div');
             productItem.className = 'gallery-item';
