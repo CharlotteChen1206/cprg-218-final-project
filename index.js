@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const limitedProducts = products.slice(0, 20);
                 displayProducts(limitedProducts);
             })
-            .catch(error => console.error('Error fetching products:', error));
     }
 
     function displayProducts(products) {
